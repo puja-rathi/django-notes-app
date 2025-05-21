@@ -23,6 +23,7 @@ pipeline {
                 
                 echo 'code build!!'
                 sh "docker build -t notes-app:latest ."
+                 echo 'code build succeed!!'
             }
         }
         stage('push') {
